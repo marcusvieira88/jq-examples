@@ -8,7 +8,9 @@ This project contains some JQ queries example.
 brew install jq
 ```
 
-# Nested Query with multiple fields
+# JQ Examples
+
+### Nested Query with multiple fields
 
 ```ssh
 cat example.json |  jq ".data.collections.edges[].node.products.edges[].node.variants.edges[].node | .product.productType, .quantity"
